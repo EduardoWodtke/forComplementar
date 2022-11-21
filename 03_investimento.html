@@ -9,10 +9,26 @@
 
     //ENTRADA
 
+    let faturado = 100;
+    let resposta = 0;
+    let resposta2 = 0;
+    let resposta3 = 0;
 
     //PROCESSAMENTO
 
+    for(let i = 1; i <= 96; i++){   
+        faturado = faturado * 1.018
+        if(i === 24){
+            resposta = faturado
+        }else if(i === 48){
+            resposta2 = faturado
+        }else if(i === 96){
+            resposta3 = faturado
+        }
+    }
     
     //SAÍDA
     
+    document.write("<li>Em 24 meses sera faturado: R$" + resposta.toFixed(2) + ".</li></br><li>Já em 48 será: R$" + resposta2.toFixed(2) + ".</li></br><li>Enquanto isso em 96 meses é: R$" + resposta3.toFixed(2) + ".</li>")
+
 </script>

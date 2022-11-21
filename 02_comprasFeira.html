@@ -16,10 +16,31 @@
 
     //ENTRADA
 
-
-    //PROCESSAMENTO
+    let qntProdutosV = Number(prompt("Quantos protudos vendidos?"));
 
     
+    
+    //PROCESSAMENTO
+    const tomate = Number(prompt("informe a quantia vendida desse produto?"));
+    const batata = Number(prompt("informe a quantia vendida desse produto?"));
+    const batataDoce = Number(prompt("informe a quantia vendida desse produto?"));
+    const alface = Number(prompt("informe a quantia vendida desse produto?"));
+    const cebola = Number(prompt("informe a quantia vendida desse produto?"));
+    const cebolinha = Number(prompt("informe a quantia vendida desse produto?"));
+    const beterraba   = Number(prompt("informe a quantia vendida desse produto?"));
+    
+    const calculo1 = tomate * 3.90 
+    const calculo2 = batata * 3.40
+    const calculo3 = batataDoce * 4.70
+    const calculo4 = alface * 1.50
+    const calculo5 = cebola * 2.90
+    const calculo6 = cebolinha * 1.40
+    const calculo7 = beterraba * 4.10
+    
+    const soma = calculo1 + calculo2 + calculo3 + calculo4 + calculo5 + calculo6 + calculo7
+
     //SAÍDA
+
+    document.write("<li>Tomate: R$" + calculo1 + "</li><br>"+ "<li>batata: R$" + calculo2 + "</li><br>" + "<li>batata-doce: R$" + calculo3 + "</li><br>" + "<li>alface: R$" + calculo4 + "</li><br>" + "<li>cebola: R$" + calculo5 + "</li><br>" + "<li>cebolinha: R$" + calculo6 + "</li><br>" + "<li>beterraba: R$" + calculo7 + "</li><br>" + "</br><li>Total: R$" + soma + "</li><br>")
     
 </script>

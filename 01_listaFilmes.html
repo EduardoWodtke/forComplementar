@@ -10,10 +10,28 @@
 
     //ENTRADA
 
+    let qntFilmes = parseInt(prompt("Quantos filmes deseja cadastrar?"))
+    
+    let drama = []
+    let comedia = []
+    let romance = []
 
     //PROCESSAMENTO
 
+    for(let i = 1; i <= qntFilmes; i ++){
+        let filme = prompt("Quais são os filmes?");
+        let genero = prompt("qual o genero do filme: " + filme);
+        if(genero === "drama"){
+            drama.push(filme);
+        }else if(genero === "romance"){
+            romance.push(filme);
+        }else if(genero === "comedia"){
+            comedia.push(filme);
+        }
+    }
     
     //SAÍDA
-    
+
+    document.write("<li>Os filmes de drama são: " + drama + ".</li></br><li>Os filmes de comédia são: " + comedia + ".</li></br><li>Os filmes de romance são: " + romance + ".</li>")
+
 </script>
