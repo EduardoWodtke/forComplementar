@@ -9,10 +9,20 @@
 
     //ENTRADA
 
+    //.sort(((b, a) => (a - b)))
+
+    let qtnPessoas = Number(prompt("Quantas pessoas?"));
+    let allAlturas = [];
 
     //PROCESSAMENTO
 
+    for(let i = 1; i <= qtnPessoas; i++){
+        let altura = Number(prompt("Quanto de altura?"));
+        allAlturas.push(altura);
+    }
     
     //SAÍDA
     
+    document.write("Menor altura: " + allAlturas.sort(((a, b) => (a - b)))[0] + "</br> Maior altura: " + allAlturas.sort(((b, a) => (a - b)))[0]);
+
 </script>

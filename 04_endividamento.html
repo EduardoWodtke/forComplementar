@@ -8,9 +8,19 @@
 
     //ENTRADA
 
+    let banco = 10000
 
     //PROCESSAMENTO
 
+    for(let i = 1; i <= 500; i++){
+        banco = banco * 1.03
+        banco = banco - 300
+        if(banco === 0){
+            document.write(i)
+        }else{
+            document.write("Victor...")
+        }
+    }
     
     //SAÍDA
     
